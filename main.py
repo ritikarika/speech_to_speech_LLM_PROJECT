@@ -16,7 +16,7 @@ engine = p.init()
 engine.setProperty('rate', 190)  # Speed of speech
 
 # Set up Google Generative AI model
-api_key = "API KEY"  # Replace with your Google API key
+api_key = ""  # Replace with your Google API key
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-pro')
 
