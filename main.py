@@ -8,7 +8,7 @@ import tkinter as tk
 from threading import Thread, Event
 from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError
 
-# Set up logging
+# Setting up logging
 logging.basicConfig(level=logging.INFO)
 
 # Initialize pyttsx3 TTS engine
@@ -16,7 +16,7 @@ engine = p.init()
 engine.setProperty('rate', 190)  # Speed of speech
 
 # Set up Google Generative AI model
-api_key = "AIzaSyAMifDtuFBU7UfMmKcr6sGj2XgLhaEcPmY"  # Replace with your Google API key
+api_key = "API KEY"  # Replace with your Google API key
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-pro')
 
